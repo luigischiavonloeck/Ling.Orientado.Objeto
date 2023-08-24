@@ -2,7 +2,7 @@ package Model;
 
 public class Aluno {
 
-    private int id;
+    private Long id;
     private int cpf;
     private String nome;
     private String sobrenome;
@@ -11,7 +11,7 @@ public class Aluno {
     public Aluno() {
     }
 
-    public Aluno(int id, int cpf, String nome, String sobrenome, String email) {
+    public Aluno(Long id, int cpf, String nome, String sobrenome, String email) {
         this.id = id;
         this.cpf = cpf;
         this.nome = nome;
@@ -19,16 +19,16 @@ public class Aluno {
         this.email = email;
     }
 
-    public Aluno(int id, int cpf) {
+    public Aluno(Long id, int cpf) {
         this.id = id;
         this.cpf = cpf;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
