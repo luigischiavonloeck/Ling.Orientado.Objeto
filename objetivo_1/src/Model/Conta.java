@@ -47,6 +47,4 @@ public class  Conta {
                 ", saldo=" + saldo +
                 '}';
     }
-
-//    testea
 }

@@ -60,5 +60,8 @@ public class FuncionarioController {
         funcionarioMap.put(fn7.getId(), fn7);
 
         System.out.println(funcionarioMap);
+
+        System.out.println("--- Procurar o objeto de id3");
+        System.out.println(funcionarioMap.get(3L));
     }
 }
