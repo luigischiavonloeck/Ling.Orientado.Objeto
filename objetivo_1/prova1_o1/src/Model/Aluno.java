@@ -66,7 +66,7 @@ public class Aluno {
 
     @Override
     public String toString() {
-        return "Aluno{" +
+        return "\nAluno{" +
                 "id=" + id +
                 ", cpf=" + cpf +
                 ", nome='" + nome + '\'' +
