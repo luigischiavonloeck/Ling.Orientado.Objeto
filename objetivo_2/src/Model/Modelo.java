@@ -1,14 +1,24 @@
 package Model;
 
 public class Modelo {
+    private Long id;
     private String descricao;
 
     public Modelo(){
 
     }
 
-    public Modelo(String descricao) {
+    public Modelo(Long id, String descricao) {
+        this.id = id;
         this.descricao = descricao;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getDescricao() {

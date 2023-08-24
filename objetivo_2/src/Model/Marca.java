@@ -1,14 +1,24 @@
 package Model;
 
 public class Marca {
+    private Long id;
     private String descricao;
 
     public Marca(){
 
     }
 
-    public Marca(String descricao) {
+    public Marca(Long id, String descricao) {
+        this.id = id;
         this.descricao = descricao;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getDescricao() {

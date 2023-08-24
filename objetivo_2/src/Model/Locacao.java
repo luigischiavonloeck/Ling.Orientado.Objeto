@@ -3,6 +3,7 @@ package Model;
 import java.time.*;
 
 public class Locacao {
+    private Long id;
     private LocalDate dataLocacao;
     private LocalTime horaLocacao;
     private LocalDate dataDevolucao;
@@ -15,7 +16,8 @@ public class Locacao {
     public Locacao() {
     }
 
-    public Locacao(LocalDate dataLocacao, LocalTime horaLocacao, LocalDate dataDevolucao, LocalTime horaDevolucao, int quilometragem, double valorCalcao, double valor_locacao, boolean devolvido) {
+    public Locacao(Long id, LocalDate dataLocacao, LocalTime horaLocacao, LocalDate dataDevolucao, LocalTime horaDevolucao, int quilometragem, double valorCalcao, double valor_locacao, boolean devolvido) {
+        this.id = id;
         this.dataLocacao = dataLocacao;
         this.horaLocacao = horaLocacao;
         this.dataDevolucao = dataDevolucao;
@@ -24,6 +26,14 @@ public class Locacao {
         this.valorCalcao = valorCalcao;
         this.valor_locacao = valor_locacao;
         this.devolvido = devolvido;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public LocalDate getDataLocacao() {

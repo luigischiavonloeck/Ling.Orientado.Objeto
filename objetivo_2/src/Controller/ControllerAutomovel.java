@@ -4,10 +4,11 @@ import Model.Automovel;
 
 public class ControllerAutomovel {
     public static void main(String[] args) {
-        Automovel at1 = new Automovel("Teste","ABCDE-123","Azul",4,"Diesel",5000,"SJKFGSEJKGVHSDV", 1500);
+        Automovel at1 = new Automovel(1L,"Teste","ABCDE-123","Azul",4,"Diesel",5000,"SJKFGSEJKGVHSDV", 1500);
         Automovel at2 = new Automovel();
         System.out.println(at1);
         System.out.println(at2);
+        at2.setId(2L);
         at2.setRenavan("Renault");
         at2.setPlaca("12345-ABC");
         at2.setCor("Amarelo");
