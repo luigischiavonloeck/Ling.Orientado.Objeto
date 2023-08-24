@@ -4,6 +4,7 @@ import Model.Automovel;
 
 public class ControllerAutomovel {
     public static void main(String[] args) {
+        System.out.println("======= exercicio 1 =======");
         Automovel at1 = new Automovel(1L,"Teste","ABCDE-123","Azul",4,"Diesel",5000,"SJKFGSEJKGVHSDV", 1500);
         Automovel at2 = new Automovel();
         System.out.println(at1);

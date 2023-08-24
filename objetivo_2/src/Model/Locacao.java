@@ -103,7 +103,8 @@ public class Locacao {
     @Override
     public String toString() {
         return "Locacao{" +
-                "dataLocacao=" + dataLocacao +
+                "id=" + id +
+                ", dataLocacao=" + dataLocacao +
                 ", horaLocacao=" + horaLocacao +
                 ", dataDevolucao=" + dataDevolucao +
                 ", horaDevolucao=" + horaDevolucao +
