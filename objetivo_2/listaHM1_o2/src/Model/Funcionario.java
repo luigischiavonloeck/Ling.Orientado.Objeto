@@ -1,14 +1,16 @@
 package Model;
 
-public class Funcionario {
+public abstract class Funcionario {
     protected String nome;
     protected double salario;
-    protected double bonus;
+    protected double bonus = 0;
 
     public Funcionario() {
+        super();
     }
 
     public Funcionario(String nome, double salario) {
+        super();
         this.nome = nome;
         this.salario = salario;
     }
