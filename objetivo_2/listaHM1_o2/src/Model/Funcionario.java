@@ -1,9 +1,9 @@
 package Model;
 
 public abstract class Funcionario {
-    protected String nome;
-    protected double salario;
-    protected double bonus = 0;
+    private String nome;
+    private double salario;
+//    protected double bonus = 0;
 
     public Funcionario() {
         super();
@@ -31,7 +31,9 @@ public abstract class Funcionario {
         this.salario = salario;
     }
 
-    public double getBonus() {
-        return salario*(bonus/100);
-    }
+//    public double getBonus() {
+//        return salario*(bonus/100);
+//    }
+
+    public abstract double getBonus();
 }

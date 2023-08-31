@@ -8,10 +8,16 @@ public class Desenvolvedor extends Funcionario{
         super(nome, salario);
     }
 
+//    @Override
+//    public double getBonus() {
+//        bonus = 5;
+//        return super.getBonus();
+//    }
+
+
     @Override
     public double getBonus() {
-        bonus = 5;
-        return super.getBonus();
+        return getSalario() * 0.05;
     }
 
     @Override

@@ -42,5 +42,8 @@ public class FuncionarioController {
         System.out.println(dev1);
         System.out.println(dev2);
         System.out.println("Bonus: "+ dev2.getBonus());
+
+//      ------ Exercicio 2 ------
+
     }
 }
