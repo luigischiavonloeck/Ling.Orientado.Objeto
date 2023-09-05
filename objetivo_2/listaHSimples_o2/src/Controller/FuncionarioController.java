@@ -52,24 +52,24 @@ public class FuncionarioController {
 
         DevSenior ds1 = new DevSenior("Luisa",3500);
         DevSenior ds2 = new DevSenior("Ana",3500);
-        DevSenior ds3 = new DevSenior("Miguel",3500);
-        DevSenior ds4 = new DevSenior("Gabriel",3500);
-        DevSenior ds5 = new DevSenior("Bruno",3500);
-        DevSenior ds6 = new DevSenior("Thales",3500);
+        Desenvolvedor ds3 = new DevSenior("Miguel",3500);
+        Desenvolvedor ds4 = new DevSenior("Gabriel",3500);
+        Funcionario ds5 = new DevSenior("Bruno",3500);
+        Funcionario ds6 = new DevSenior("Thales",3500);
 
         DevPleno dp1 = new DevPleno("Vitor", 2500);
         DevPleno dp2 = new DevPleno("Julia", 2500);
-        DevPleno dp3 = new DevPleno("Juliano", 2500);
-        DevPleno dp4 = new DevPleno("Rodrigo", 2500);
-        DevPleno dp5 = new DevPleno("Henrique", 2500);
-        DevPleno dp6 = new DevPleno("Amanda", 2500);
+        Desenvolvedor dp3 = new DevPleno("Juliano", 2500);
+        Desenvolvedor dp4 = new DevPleno("Rodrigo", 2500);
+        Funcionario dp5 = new DevPleno("Henrique", 2500);
+        Funcionario dp6 = new DevPleno("Amanda", 2500);
 
         DevJunior dj1 = new DevJunior("Pedro",1800);
         DevJunior dj2 = new DevJunior("Cleber",1800);
-        DevJunior dj3 = new DevJunior("Marcia",1800);
-        DevJunior dj4 = new DevJunior("Borba",1800);
-        DevJunior dj5 = new DevJunior("Caetano",1800);
-        DevJunior dj6 = new DevJunior("George",1800);
+        Desenvolvedor dj3 = new DevJunior("Marcia",1800);
+        Desenvolvedor dj4 = new DevJunior("Borba",1800);
+        Funcionario dj5 = new DevJunior("Caetano",1800);
+        Funcionario dj6 = new DevJunior("George",1800);
 
         List<Funcionario> funcionarioList = new ArrayList<>();
         funcionarioList.add(gg1);
