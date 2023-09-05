@@ -10,7 +10,7 @@ public class DevJunior extends Desenvolvedor{
 
     @Override
     public double getBonus() {
-        return getSalario() * 0.1;
+        return getSalario() * 0.5;
     }
 
     @Override

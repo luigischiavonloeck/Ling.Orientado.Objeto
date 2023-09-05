@@ -10,7 +10,7 @@ public class DevPleno extends Desenvolvedor{
 
     @Override
     public double getBonus() {
-        return getSalario() * 0.1;
+        return getSalario() * 0.05;
     }
 
     @Override
