@@ -76,8 +76,9 @@ public class VeiculoController {
         System.out.println("\n----- Lista de veiculos com placa inical I pelo ano de fabricação -----");
         veiculoList.forEach(veiculo -> {
             if (veiculo instanceof Automovel){
-                if (((Automovel) veiculo).getPlaca().startsWith("I")||((Automovel) veiculo).getPlaca().startsWith("i"))
-                System.out.println(veiculo.toString());
+                if (((Automovel) veiculo).getPlaca().startsWith("I")||((Automovel) veiculo).getPlaca().startsWith("i")) {
+                    System.out.println(veiculo.toString());
+                }
             }
         });
     }
