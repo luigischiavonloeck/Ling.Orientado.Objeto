@@ -10,6 +10,11 @@ public class Cachorro extends Animal{
 
     @Override
     public void desenhar() {
-        System.out.println("Um cachorro foi desenhado");
+        System.out.printf("\nUm cachorro foi desenhado em X: %.2f, Y: %.2f",x,y);
+    }
+
+    @Override
+    public String toString() {
+        return "\nCachorro "+super.toString();
     }
 }

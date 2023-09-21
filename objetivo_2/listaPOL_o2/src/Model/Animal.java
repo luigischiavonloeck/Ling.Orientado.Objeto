@@ -29,13 +29,14 @@ public abstract class Animal {
     }
 
     public void mover(double x, double y){
-        System.out.printf("Animal movido para X: %.2f, Y: %.2f",x,y);
+        this.x = x;
+        this.y = y;
     }
 
     public abstract void desenhar();
 
     @Override
     public String toString() {
-        return "Posição do animal: " + "x=" + x + ", y=" + y;
+        return hashCode()+" posição : " + "x=" + x + ", y=" + y;
     }
 }

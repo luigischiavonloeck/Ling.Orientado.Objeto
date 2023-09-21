@@ -24,17 +24,18 @@ public class Passaro extends Animal{
         this.z = z;
     }
 
-    public void mover(double x, double y, double z){
-        System.out.printf("Animal movido para X: %.2f, Y: %.2f, Z: %.2f",x,y,z);
+    public void mover(double x, double y, double z) {
+        super.mover(x, y);
+        this.z = z;
     }
 
     @Override
     public void desenhar() {
-        System.out.println("Um passaro foi desenhado");
+        System.out.printf("\nUm passaro foi desenhado em X: %.2f, Y: %.2f, Z: %.2f",x,y,z);
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", z= " + z;
+        return "\nPássaro "+super.toString() + ", z= " + z;
     }
 }
