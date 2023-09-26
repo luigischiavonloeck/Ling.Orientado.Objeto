@@ -32,5 +32,10 @@ public abstract class Funcionario {
     }
 
     public abstract double getBonus();
+
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'' + ", salario=" + salario + '\'' + ", bonus=" + getBonus();
+    }
 }
 
