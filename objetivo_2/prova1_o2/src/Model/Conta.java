@@ -4,8 +4,10 @@ public abstract class Conta {
     protected double saldo;
 
     public Conta() {
+        super();
     }
     public Conta(double saldo) {
+        super();
         this.saldo = saldo;
     }
 
@@ -30,7 +32,7 @@ public abstract class Conta {
     }
 
     public void atualiza(double valor){
-        this.saldo = this.saldo * (1 - valor/100);
+        this.saldo = this.saldo * (1 + valor/100);
     }
 
     @Override
