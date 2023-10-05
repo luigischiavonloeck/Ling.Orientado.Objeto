@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LuigiLoeckLPOO.iml" filepath="$PROJECT_DIR$/LuigiLoeckLPOO.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo_1/lista1_o1/lista1_o1.iml" filepath="$PROJECT_DIR$/objetivo_1/lista1_o1/lista1_o1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo_3/lista1_o3/lista1_o3.iml" filepath="$PROJECT_DIR$/objetivo_3/lista1_o3/lista1_o3.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo_1/lista2_o1/lista2_o1.iml" filepath="$PROJECT_DIR$/objetivo_1/lista2_o1/lista2_o1.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo_2/listaHMultipla1_o2/listaHMultipla1_o2.iml" filepath="$PROJECT_DIR$/objetivo_2/listaHMultipla1_o2/listaHMultipla1_o2.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo_2/listaHMultipla2_o2/listaHMultipla2_o2.iml" filepath="$PROJECT_DIR$/objetivo_2/listaHMultipla2_o2/listaHMultipla2_o2.iml" />
@@ -13,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/objetivo_2/objetivo_2.iml" filepath="$PROJECT_DIR$/objetivo_2/objetivo_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo_1/prova1_o1/prova1_o1.iml" filepath="$PROJECT_DIR$/objetivo_1/prova1_o1/prova1_o1.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo_2/prova1_o2/prova1_o2.iml" filepath="$PROJECT_DIR$/objetivo_2/prova1_o2/prova1_o2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo_3/prova1_o3/prova1_o3.iml" filepath="$PROJECT_DIR$/objetivo_3/prova1_o3/prova1_o3.iml" />
     </modules>
   </component>
 </project>

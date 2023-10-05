@@ -1,2 +1,4 @@
-package Controller;public class EmpFuncController {
+package Controller;
+
+public class EmpFuncController {
 }
