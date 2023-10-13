@@ -1,5 +1,6 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
@@ -8,7 +9,7 @@ public class Usuario {
     private String nome;
     private String email;
     private String telefone;
-    private List<Corrida> corridaList;
+    private List<Corrida> corridaList = new ArrayList<>();
 
     public Usuario() {
     }

@@ -1,21 +1,21 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Empresa {
     private String cnpj;
     private String razaoSocial;
     private String nomeFantasia;
-    private List<Funcionario> funcionariosList;
+    private List<Funcionario> funcionariosList = new ArrayList<>();
 
     public Empresa() {
     }
 
-    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, List<Funcionario> funcionariosList) {
+    public Empresa(String cnpj, String razaoSocial, String nomeFantasia) {
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
         this.nomeFantasia = nomeFantasia;
-        this.funcionariosList = funcionariosList;
     }
 
     public String getCnpj() {

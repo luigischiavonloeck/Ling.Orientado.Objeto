@@ -1,5 +1,6 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Produto {
@@ -7,7 +8,7 @@ public class Produto {
     private String nome;
     private Integer quantidade;
     private Double preco;
-    private List<Fornecedor> fornecedorList;
+    private List<Fornecedor> fornecedorList = new ArrayList<>();
 
     public Produto() {
     }
@@ -61,7 +62,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
+        return "\nProduto{" +
                 "codigo=" + codigo +
                 ", nome='" + nome + '\'' +
                 ", quantidade=" + quantidade +

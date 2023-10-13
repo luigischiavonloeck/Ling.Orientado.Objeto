@@ -1,29 +1,31 @@
 package Model;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Fornecimento {
-    private Date data;
+    private LocalDate data;
     private Double valorTotal;
-    private List<Produto> produtoList;
-    private List<Fornecedor> fornecedorList;
+    private Produto produto;
+    private Fornecedor fornecedor;
 
     public Fornecimento() {
     }
 
-    public Fornecimento(Date data, Double valorTotal, List<Produto> produtoList, List<Fornecedor> fornecedorList) {
+    public Fornecimento(LocalDate data, Double valorTotal, Produto produto, Fornecedor fornecedor) {
         this.data = data;
         this.valorTotal = valorTotal;
-        this.produtoList = produtoList;
-        this.fornecedorList = fornecedorList;
+        this.produto = produto;
+        this.fornecedor = fornecedor;
     }
 
-    public Date getData() {
+    public LocalDate getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(LocalDate data) {
         this.data = data;
     }
 
@@ -35,29 +37,29 @@ public class Fornecimento {
         this.valorTotal = valorTotal;
     }
 
-    public List<Produto> getProdutoList() {
-        return produtoList;
+    public Produto getProduto() {
+        return produto;
     }
 
-    public void setProdutoList(List<Produto> produtoList) {
-        this.produtoList = produtoList;
+    public void setProduto(Produto produto) {
+        this.produto = produto;
     }
 
-    public List<Fornecedor> getFornecedorList() {
-        return fornecedorList;
+    public Fornecedor getFornecedor() {
+        return fornecedor;
     }
 
-    public void setFornecedorList(List<Fornecedor> fornecedorList) {
-        this.fornecedorList = fornecedorList;
+    public void setFornecedor(Fornecedor fornecedor) {
+        this.fornecedor = fornecedor;
     }
 
     @Override
     public String toString() {
-        return "Fornecimento{" +
+        return "\nFornecimento{" +
                 "data=" + data +
                 ", valorTotal=" + valorTotal +
-                ", produtoList=" + produtoList +
-                ", fornecedorList=" + fornecedorList +
+                ", produtoList=" + produto +
+                ", fornecedorList=" + fornecedor +
                 '}';
     }
 }

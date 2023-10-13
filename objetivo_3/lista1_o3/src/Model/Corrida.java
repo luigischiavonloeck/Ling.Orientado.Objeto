@@ -1,5 +1,6 @@
 package Model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Corrida {
@@ -7,7 +8,7 @@ public class Corrida {
     private Long id;
     private String tipoPagamento;
     private String detalhesPagamento;
-    private Date dataInicio;
+    private LocalDate dataInicio;
     private Double preco;
     private Usuario passageiro;
     private Motorista motorista;
@@ -15,7 +16,7 @@ public class Corrida {
     public Corrida() {
     }
 
-    public Corrida(String tipoPagamento, String detalhesPagamento, Date dataInicio, Double preco, Usuario passageiro, Motorista motorista) {
+    public Corrida(String tipoPagamento, String detalhesPagamento, LocalDate dataInicio, Double preco, Usuario passageiro, Motorista motorista) {
         this.id = ++count;
         this.tipoPagamento = tipoPagamento;
         this.detalhesPagamento = detalhesPagamento;
@@ -49,11 +50,11 @@ public class Corrida {
         this.detalhesPagamento = detalhesPagamento;
     }
 
-    public Date getDataInicio() {
+    public LocalDate getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(Date dataInicio) {
+    public void setDataInicio(LocalDate dataInicio) {
         this.dataInicio = dataInicio;
     }
 

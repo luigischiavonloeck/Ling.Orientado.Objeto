@@ -7,16 +7,15 @@ public class Aluno {
     private Long matricula;
     private String nome;
     private String sobrenome;
-    private List<Disciplina> disciplinasList;
+    private List<Disciplina> disciplinasList = new ArrayList<>();
 
     public Aluno() {
     }
 
-    public Aluno(Long matricula, String nome, String sobrenome, List<Disciplina> disciplinasList) {
+    public Aluno(Long matricula, String nome, String sobrenome) {
         this.matricula = matricula;
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.disciplinasList = disciplinasList;
     }
 
     public Long getMatricula() {
@@ -50,6 +49,8 @@ public class Aluno {
     public void setDisciplinasList(List<Disciplina> disciplinasList) {
         this.disciplinasList = disciplinasList;
     }
+
+
 
     @Override
     public String toString() {

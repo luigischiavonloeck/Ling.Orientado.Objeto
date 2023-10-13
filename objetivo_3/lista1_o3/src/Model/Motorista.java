@@ -1,5 +1,6 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Motorista {
@@ -8,19 +9,17 @@ public class Motorista {
     private String nome;
     private String email;
     private String telefone;
-    private List<Corrida> corridaList;
+    private List<Corrida> corridaList = new ArrayList<>();
     private Veiculo veiculo;
 
     public Motorista() {
     }
 
-    public Motorista(String nome, String email, String telefone, List<Corrida> corridaList, Veiculo veiculo) {
+    public Motorista(String nome, String email, String telefone) {
         this.id = ++count;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
-        this.corridaList = corridaList;
-        this.veiculo = veiculo;
     }
 
     public Long getId() {
