@@ -5,6 +5,7 @@ public class Item {
     private Double desconto;
     private Integer quantidade;
     private Produto produto;
+    private Double valorTotal;
 
     public Item() {
     }
@@ -14,6 +15,7 @@ public class Item {
         this.desconto = desconto;
         this.quantidade = quantidade;
         this.produto = produto;
+        this.valorTotal = (produto.getPreco() * quantidade)*(1 - (desconto/100));
     }
 
     public Integer getCodItem() {
@@ -48,13 +50,20 @@ public class Item {
         this.produto = produto;
     }
 
+    public Double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(Double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
     @Override
     public String toString() {
-        return "Item{" +
-                "codItem=" + codItem +
-                ", desconto=" + desconto +
-                ", quantidade=" + quantidade +
-                ", produto=" + produto +
-                '}';
+        return "\n    Item " + codItem +
+                ": " + produto.getNome() +
+                " | quantidade : " + quantidade +
+                " | desconto : " + desconto +
+                "% | valor total : " + Math.ceil(valorTotal);
     }
 }

@@ -9,6 +9,7 @@ public class Produto {
     private Integer quantidade;
     private Double preco;
     private List<Fornecedor> fornecedorList = new ArrayList<>();
+    private List<Item> itemList = new ArrayList<>();
 
     public Produto() {
     }
@@ -60,6 +61,14 @@ public class Produto {
         this.fornecedorList = fornecedorList;
     }
 
+    public List<Item> getItemList() {
+        return itemList;
+    }
+
+    public void setItemList(List<Item> itemList) {
+        this.itemList = itemList;
+    }
+
     @Override
     public String toString() {
         return "Produto{" +
@@ -69,4 +78,5 @@ public class Produto {
                 ", preco=" + preco +
                 '}';
     }
+
 }

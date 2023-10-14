@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fornecedor {
-    private Integer cnpj;
+    private String cnpj;
     private String contato;
     private String nome;
     private List<Produto> produtoList = new ArrayList<>();
@@ -12,17 +12,17 @@ public class Fornecedor {
     public Fornecedor() {
     }
 
-    public Fornecedor(Integer cnpj, String contato, String nome) {
+    public Fornecedor(String cnpj, String contato, String nome) {
         this.cnpj = cnpj;
         this.contato = contato;
         this.nome = nome;
     }
 
-    public Integer getCnpj() {
+    public String getCnpj() {
         return cnpj;
     }
 
-    public void setCnpj(Integer cnpj) {
+    public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
 

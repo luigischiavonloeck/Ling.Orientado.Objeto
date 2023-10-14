@@ -51,12 +51,10 @@ public class Fornecimento {
     }
 
     @Override
-    public String toString() {
-        return "Fornecimento{" +
-                "data=" + data +
-                ", valorTotal=" + valorTotal +
-                ", produto=" + produto +
-                ", fornecedor=" + fornecedor +
-                '}';
+    public String toString(){
+        return "\n\nFornecimento de " + data +
+                "\nValor total - " + Math.ceil(valorTotal) +
+                "\nFornecedor - " + fornecedor.getNome() +
+                "\nProduto - " + produto.getNome();
     }
 }
