@@ -47,11 +47,16 @@ public class LojaController {
 
         System.out.println("\n========= Testando funções =========");
         // Estoque baixo
+        System.out.println(pedido1);
         pedido1.addItens(item2);
+        System.out.println(pedido1);
         // Remover item
         System.out.println(prod2);
+        System.out.println(pedido2);
         pedido2.removeItens(item2);
         System.out.println(prod2);
+        System.out.println(pedido2);
+        pedido2.removeItens(item1);
 
         System.out.println("\n========= Exercicio 1.c =========");
         prod1.getFornecedorList().add(fornecedor1);

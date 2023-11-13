@@ -1,6 +1,6 @@
 package model;
 
-public class Funcionario {
+public abstract class Funcionario {
     private Integer matricula;
     private String nome;
     private String endereco;
